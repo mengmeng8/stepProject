@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>需求配置审批</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datamatch.css"/>
+    <!--js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/requireapproval.js"></script>
+</head>
+<body>
+    <div class="require-approval">
+        <div class="require-approval-title form-horizontal">
+            <div class="form-group">
+                <span>需求配置审批</span>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-2">申请单号:</div>
+              <div class="col-sm-3">SJSC-20170803-000001</div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2">需求描述:</div>
+                <div class="col-sm-3">保险风控分析数据</div>
+            </div>
+        </div>
+        <!--用户数据-->
+        <div class="user-data">
+            <spqn class="pre-line"></spqn><span class="title-font">用户数据</span><span class="after-line"></span>
+            <div class="form-group">
+                <div class="col-sm-3 col-sm-list">所选用户数据:</div>
+                <div class="col-sm-3 col-sm-list">SJSQ-20170628-000001</div>
+                <div class="col-sm-3 col-sm-list">保险风控分析需求</div>
+            </div>
+            <div class="demand-table-content">
+                <table class="table table-bordered">
+                    <thead>
+                       <tr>
+                           <th>数据编码</th>
+                           <th>数据描述</th>
+                           <th>数据字段</th>
+                           <th>数据上传时间</th>
+                           <th>操作</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <td><p class="display-detail" clicknum="true">SJSQ-20170628-000001</p></td>
+                           <td>保险风控分析需求</td>
+                           <td>DEVICE_NUMBER,CARD_NUMBER...</td>
+                           <td>2017/08/11 10:10:10</td>
+                           <td><a id="view-btn">查看详细</a></td>
+                       </tr>
+                       <!--用户数据(数据编码详情)-->
+                       <tr class="detail-tr">
+                           <td colspan="5">
+                               <div class="data-encod-table">
+                                   <table class="data-encod-detail table">
+                                       <tr>
+                                           <th>序号</th>
+                                           <th>字段名称</th>
+                                           <th>排序</th>
+                                       </tr>
+                                       <tr>
+                                           <td>1</td>
+                                           <td>DEVICE_NUMBER</td>
+                                           <td><span class="up-btn"></span><span class="down-btn"></span></td>
+                                       </tr>
+                                       <tr>
+                                           <td>2</td>
+                                           <td>DEVICE_NUMBER</td>
+                                           <td><span class="up-btn"></span><span class="down-btn"></span></td>
+                                       </tr>
+                                       <tr>
+                                           <td>3</td>
+                                           <td>DEVICE_NUMBER</td>
+                                           <td><span class="up-btn"></span><span class="down-btn"></span></td>
+                                       </tr>
+                                       <tr>
+                                           <td>4</td>
+                                           <td>DEVICE_NUMBER</td>
+                                           <td><span class="up-btn"></span><span class="down-btn"></span></td>
+                                       </tr>
+                                   </table>
+                               </div>
+                           </td>
+                       </tr>
+                    </tbody>
+                </table>
+                <!--点击查看详细(内容展示)-->
+                <div class="view-details form-horizontal">
+                    <div class="view-title">
+                        <span class="view-title-font">用户数据</span><span class="enlarge-btn"></span><button class="cancel-btn"></button>
+                    </div>
+                    <div class="form-group view-content">
+                        <label for="data-encode" class="col-sm-4 view-label">数据编码:</label>
+                        <div class="col-sm-6" id="data-encode">SJSC-20170803-000001</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="upload-time" class="col-sm-4 view-label">上传时间:</label>
+                        <div class="col-sm-6 " id="upload-time">2017/5/2 14:32:17</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-priciple" class="col-sm-4 view-label">数据负责人:</label>
+                        <div class="col-sm-3" id="data-priciple">张三</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-description" class="col-sm-4 view-label">数据描述:</label>
+                        <div class="col-sm-6" id="data-description">风控保险分析用户数据</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile-match" class="col-sm-4 view-label">校验联通号:</label>
+                        <div class="col-sm-4" id="mobile-match">是</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="field-name" class="col-sm-4 view-label">字段名称:</label>
+                        <div class="col-sm-3" id="field-name">DEVICE_NUMBER,CARD_NUMBER,
+                            user_id_num,id,name,month</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-ten" class="col-sm-4 view-label">用户数据:</label>
+                        <div class="col-sm-4" id="data-ten"><a>SJSC_JLXX_RCAOIR_20170728_1009001
+                            SJSC_JLXX_RCAOIR_20170728_1009002</a></div>
+                    </div>
+                        <div class="form-group">
+                            <label for="data-status" class="col-sm-4 view-label">数据状态:</label>
+                            <div class="col-sm-4" id="data-status">上传完成</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="old-row-num" class="col-sm-4 view-label">原文件行数:</label>
+                            <div class="col-sm-4" id="old-row-num">1000000</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="original-row"class="col-sm-4 view-label">已入库行数:</label>
+                            <div class="col-sm-4" id="original-row">1000000</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="not-row" class="col-sm-4 view-label">未入库行数:</label>
+                            <div class="col-sm-4" id="not-row">1000000</div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn close-view-btn">关闭</button>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+                <!--全部任务-->
+        <div class="all-tasks">
+                <spqn class="pre-line"></spqn><span class="title-font">全部任务</span><span class="after-line"></span>
+            <div class="tasks-table">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>产品编码</th>
+                        <th>产品名称</th>
+                        <th>数据周期</th>
+                        <th>账期开始时间</th>
+                        <th>账期结束时间</th>
+                        <th>数据获取方式</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="pro-display" clickstatus="true">DWA_V_M_CUS_3G_ACT_INFO</td>
+                        <td>3G单用户活动信息表(月)</td>
+                        <td>月</td>
+                        <td>2017-01</td>
+                        <td>2017-01</td>
+                        <td>FTP-01</td>
+                    </tr>
+                    <!--全部任务(产品编码详情)-->
+                    <tr class="detail-tr">
+                        <td colspan="7">
+                            <div class="product-code-detail">
+                                <table class="product-code-table table">
+                                    <tr>
+                                        <th>字段名称</th>
+                                        <th>字段描述</th>
+                                        <th>类型</th>
+                                        <th>字段格式</th>
+                                        <th>是否关联字段</th>
+                                        <th>关联用户字段</th>
+                                        <th>排序</th>
+                                    </tr>
+                                    <tr>
+                                        <td>NAME</td>
+                                        <td>NAME</td>
+                                        <td>字符串</td>
+                                        <td>yyyyMM</td>
+                                        <td><input  type="radio"/>是<span><input type="radio"/>否</span></td>
+                                        <td><input type="text" class="sortField"/></td>
+                                        <td>排序</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="pro-display" clickstatus="true">dwa_v_m_cus_cb_user_info</td>
+                        <td>cBSS用户基本衍生信息(月)</td>
+                        <td>月</td>
+                        <td>2017-01</td>
+                        <td>2017-01</td>
+                        <td>FTP-01</td>
+                    </tr>
+                    <tr class="detail-tr">
+                        <td colspan="7">
+                            <div class="product-code-detail">
+                                <table class="product-code-table table">
+                                    <tr>
+                                        <th>字段名称</th>
+                                        <th>字段描述</th>
+                                        <th>类型</th>
+                                        <th>字段格式</th>
+                                        <th>是否关联字段</th>
+                                        <th>关联用户字段</th>
+                                        <th>排序</th>
+                                    </tr>
+                                    <tr>
+                                        <td>NAME</td>
+                                        <td>NAME</td>
+                                        <td>字符串</td>
+                                        <td>yyyyMM</td>
+                                        <td><input  type="radio"/>是<span><input type="radio"/>否</span></td>
+                                        <td><input type="text" class="sortField"/></td>
+                                        <td>排序</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!--审核意见-->
+        <div class="approval-comments">
+            <h3>审批意见</h3>
+            <div class="approval-content form-horizontal">
+                <label class="approval-conclusion">审批结论</label>
+                <div class="form-group">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="agree" id="agree" >
+                             同意
+                        </label>
+                        <label>
+                            <input type="radio" name="refuse" id="refuse">
+                            不同意
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="execution-time" class="col-sm-3 approval-conclusion">执行时间</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="execution-time" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="process-time" class="col-sm-3 approval-conclusion">加工所需时间</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="process-time" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="option" class="col-sm-3 approval-conclusion">意见</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" id="option" >
+                        </textarea>
+                    </div>
+                </div>
+                <button class="btn add-btn">提交</button>
+                <button class="btn remove-btn">返回</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

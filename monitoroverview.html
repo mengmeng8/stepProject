@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监控总览</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/monitoroverview.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/monitoroverview.js"></script>
+</head>
+<body>
+<div class="admin-monitor">
+    <div class="monitor-content">
+        <ul>
+            <li class="hit">管理员监控总览</li>
+            <li>任务执行明细</li>
+            <li>产品使用明细</li>
+        </ul>
+        <div class="monitor-tasks">
+            <!--管理员监控总览-->
+            <div class="task" style="display:block;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>数据周期</th>
+                            <th>产品总数</th>
+                            <th>在产品总数</th>
+                            <th>未用产品总数</th>
+                            <th>本期新增数</th>
+                            <th>使用次数</th>
+                            <th>服务用户数</th>
+                            <th>执行任务数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>日</td>
+                            <td><a href="#" class="totalPro">552</a></td>
+                            <td>325</td>
+                            <td>227</td>
+                            <td>0</td>
+                            <td>8761</td>
+                            <td>4</td>
+                            <td><a href="#" class="taskNum">10</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>月</td>
+                            <td><a href="#" class="totalPro">279</a></td>
+                            <td>15</td>
+                            <td>264</td>
+                            <td>0</td>
+                            <td>52</td>
+                            <td>3</td>
+                            <td><a href="#" class="taskNum">1</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>其它</td>
+                            <td><a href="#" class="totalPro">7</a></td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>13</td>
+                            <td>1</td>
+                            <td><a href="#" class="taskNum">0</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>时</td>
+                            <td><a href="#" class="totalPro">1</a></td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>26</td>
+                            <td>3</td>
+                            <td><a href="#" class="taskNum">0</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--任务执行明细-->
+            <div class="task">
+                <div class="search-view">
+                    <span>关联需求</span>
+                    <input type="date" name=""/>
+                    <span>申请单号</span>
+                    <input type="text" name=""/>
+                    <span>产品编码</span>
+                    <input type="text" name=""/>
+                    <span>申请状态</span>
+                        <select>
+                            <option value="">全部</option>
+                            <option value="">执行中</option>
+                            <option value="">未执行</option>
+                            <option value="">完成</option>
+                            <option value="">异常</option>
+                            <option value="">完成无数据</option>
+                        </select>
+                    <span>关联需求</span>
+                    <input type="text" name=""/>
+                    <button type="button" class="btn search-btn">查询</button>
+                    <button type="button" class="btn remove-btn">清空</button>
+
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>申请单编码</th>
+                        <th>数据产品编码</th>
+                        <th>数据产品名称</th>
+                        <th>资源名称</th>
+                        <th>申请类型</th>
+                        <th>任务类型</th>
+                        <th>状态</th>
+                        <th>任务执行描述</th>
+                        <th>执行开始时间</th>
+                        <th>执行结束时间</th>
+                        <th>耗时</th>
+                        <th>任务开始时间</th>
+                        <th>申请人</th>
+                        <th>申请时间</th>
+                        <th>账期开始时间</th>
+                        <th>账期结束时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>获取</td>
+                        <td>周期性</td>
+                        <td>执行中</td>
+                        <td>流程启动成功</td>
+                        <td>2017/8/17 11:20</td>
+                        <td>4</td>
+                        <td>2017/8/17 11:17</td>
+                        <td>总部租户管理员</td>
+                        <td>2017/3/14 11:17</td>
+                        <td>2017/8/16</td>
+                        <td>2017/8/17</td>
+                        <td>2017/8/17</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>获取</td>
+                        <td>周期性</td>
+                        <td>执行中</td>
+                        <td>流程启动成功</td>
+                        <td>2017/8/17 11:20</td>
+                        <td>4</td>
+                        <td>2017/8/17 11:17</td>
+                        <td>总部租户管理员</td>
+                        <td>2017/3/14 11:17</td>
+                        <td>2017/8/16</td>
+                        <td>2017/8/16</td>
+                        <td>2017/8/17</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>获取</td>
+                        <td>周期性</td>
+                        <td>执行中</td>
+                        <td>流程启动成功</td>
+                        <td>2017/8/17 11:20</td>
+                        <td>4</td>
+                        <td>2017/8/17 11:17</td>
+                        <td>总部租户管理员</td>
+                        <td>2017/3/14 11:17</td>
+                        <td>2017/8/16</td>
+                        <td>2017/8/16</td>
+                        <td>2017/8/17</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>ZB_M_MJK0202</td>
+                        <td>T_内蒙古FTP</td>
+                        <td>获取</td>
+                        <td>周期性</td>
+                        <td>执行中</td>
+                        <td>流程启动成功</td>
+                        <td>2017/8/17 11:20</td>
+                        <td>4</td>
+                        <td>2017/8/17 11:17</td>
+                        <td>总部租户管理员</td>
+                        <td>2017/3/14 11:17</td>
+                        <td>2017/8/16</td>
+                        <td>2017/8/16</td>
+                        <td>2017/8/17</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--产品使用明细-->
+            <div class="task">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>数据周期</th>
+                        <th>产品编码</th>
+                        <th>产品名称</th>
+                        <th>发布时间</th>
+                        <th>使用次数</th>
+                        <th>服务用户数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>日</td>
+                            <td>4g_td_b_package</td>
+                            <td>4G下发_包目录</td>
+                            <td>2016/1/13 16:46</td>
+                            <td>获取</td>
+                            <td>周期性</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>T_内蒙古FTP</td>
+                            <td>ZB_M_MJK0202</td>
+                            <td>ZB_M_MJK0202</td>
+                            <td>T_内蒙古FTP</td>
+                            <td>获取</td>
+                            <td>周期性</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>T_内蒙古FTP</td>
+                            <td>ZB_M_MJK0202</td>
+                            <td>ZB_M_MJK0202</td>
+                            <td>T_内蒙古FTP</td>
+                            <td>获取</td>
+                            <td>周期性</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>T_内蒙古FTP</td>
+                            <td>ZB_M_MJK0202</td>
+                            <td>ZB_M_MJK0202</td>
+                            <td>T_内蒙古FTP</td>
+                            <td>获取</td>
+                            <td>周期性</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

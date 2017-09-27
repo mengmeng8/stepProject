@@ -1,0 +1,150 @@
+*{margin:0;}
+body{margin:0;padding:0;overflow:auto;}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+body{
+    font-family:"Arial";
+    font-size:12px;
+    background:#fff;
+    min-width:800px;
+}
+
+/**
+  tab切换
+ */
+ul,li{
+    list-style:none;
+}
+
+.work-content{
+    width:95%;
+    margin:15px auto;
+}
+
+.work-content ul{
+    height:30px;
+}
+
+.work-content ul li{
+    float:left;
+    line-height: 30px;
+    width:74px;
+    text-align: center;
+    font-size:14px;
+    cursor: pointer;
+}
+
+.work-content .hit{
+    position:relative;
+    z-index: 1000;
+    top:10px;
+    border-bottom:1px solid #ffffff;
+    border-left: 1px solid #C9C9C9;
+    border-right: 1px solid #C9C9C9;
+    border-top: 1px solid #C9C9C9;
+    border-radius: 3px;
+    cursor:pointer;
+    color:black;
+    background:#fff;
+}
+
+.content-tab{
+    margin-left: 40px;
+    width:90%;
+    height: 310px;
+    min-height:100px;
+    background:#fff;
+    display:none;
+    border:1px solid #C9C9C9;
+}
+
+.content-tab table{
+    margin:0 auto;
+    width:95%;
+}
+.content-tab table tr td{
+    padding:5px;
+}
+
+.content-tab table tbody tr{
+    border:1px solid #C9C9C9;
+}
+.content-tab table{
+    margin-top:30px;
+    border-collapse: collapse;
+}
+
+.search-view{
+    margin:0 auto;
+    width:95%;
+    height:40px;
+    padding:4px;
+    margin-top:15px;
+    margin-left:20px;
+}
+.search-view span{
+    margin-left:15px;
+}
+.search-btn,.remove-btn{
+    margin-left: 15px;
+    background:#E8504F;
+    color: #ffffff;
+}
+
+.pageing{
+    margin-top: 10px;
+    margin-left:580px;
+    width:95%;
+    height:56px;
+}
+
+.first-btn,.pre-btn,.next-btn,.last-btn{
+    width:54px;
+    height: 30px;
+    border:1px solid #E5E5E5;
+    background: #ffffff;
+    font-size: 12px;
+}
+
+.page-input,.go-btn{
+    width: 25px;
+    height: 25px;
+}
+
+.go-btn{
+    background: #FF9900;
+    line-height:0px;
+    font-size:16px;
+    border:none;
+}
+
+.work-title{
+    margin-top: 50px;
+    padding: 3px;
+    width:95%;
+
+}
+.work-logo{
+    margin-left: 80px;
+    display: inline-block;
+    width: 30px;
+    height: 33px;
+    background:url("../images/work_tit.png") no-repeat center;
+}
+
+.work-logo-font{
+    font-size:25px;
+    margin-left: 10px;
+    font-weight:bold ;
+}

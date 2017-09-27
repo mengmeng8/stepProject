@@ -1,0 +1,103 @@
+/* CSS Document */
+*{
+    margin:0;
+    padding:0;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+body{
+    font-family:"宋体","Arial";
+    font-size:12px;
+    background:#fff;
+    min-width:800px;
+}
+ul,li{
+    list-style:none;
+}
+
+/**tabs**/
+.monitor-content{
+    width:95%;
+    margin:60px auto;
+}
+.monitor-content ul{
+    height:30px;
+    border-bottom:1px solid #C9C9C9;
+}
+.monitor-content ul li{
+    float:left;
+    margin:0 2px 0 0;
+    font-size:11px;
+    height:29px;
+    line-height:30px;
+    width:111px;
+    text-align:center;
+    cursor:pointer;
+}
+.monitor-content .hit{
+    position:relative;
+    z-index: 1000;
+    top: 1px;
+    border-bottom:1px solid #ffffff;
+    border-left: 1px solid #C9C9C9;
+    border-right: 1px solid #C9C9C9;
+    border-top: 2px solid #E8504F;
+    cursor:pointer;
+    color:black;
+    background:#fff;
+}
+.task{
+    min-height:100px;
+    background-color:#fff;
+    display:none;
+}
+.task p{
+    padding:15px 15px 0 10px;
+}
+.task h4{
+    padding:15px 15px 0 10px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+.task table tr td{
+    padding:4px;
+}
+
+.task table tbody tr{
+    border:1px solid #C9C9C9;
+}
+.task table{
+    margin-top:30px;
+    border-collapse: collapse;
+}
+
+.search-view{
+    width:100%;
+    margin-top:20px;
+    padding:5px;
+    background:#fff;
+}
+
+.search-view span{
+    margin-left:10px;
+}
+.search-view input{
+    border:1px solid #DDDDDD;
+    width:136px;
+    height: 20px;
+}
+
+.search-btn,.remove-btn{
+    margin-left:5px;
+    width:45px;
+    height:30px;
+    border:none;
+    background:#E8504F;
+    color:#fff;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+
